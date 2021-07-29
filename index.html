@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="compare">Score Comparison</div>
+        <div class="time">Timer: 120</div>
+    </header>
+    <div class="container" id="quizContainer">
+
+        <div class="row">
+        
+            <div class="col-lg-12">
+            
+                <div class="pail" style="width: 100%">
+
+                    <div class="card-body">
+                        <h1 class="card-title">Short Test on JavaScript Fundamentals</h1>
+                        
+                        <p class="card-text">The timed quiz will evaluate your basic knowledge
+                            of JavaScript. You will have to answer ten (10) questions in two (2)
+                            minutes (120 seconds). If you answer a question incorrectly, ten (10)
+                            seconds will be subtracted from the clock. Click the button to start.
+                            <br>
+                            <br>
+                            <br>
+                            
+                        </p>
+                        
+                    </div>
+                    <div>
+                        <div>
+                            <button type="button" class="btn btn-dark" id="start">Click to Start</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECOND COLUMN IN THE ROW -->
+            <div class="col-lg-12" id="removePadding">
+
+                <br>
+                <!-- DISPLAYS THE CURRENT QUESTION  -->
+                <div class="question-display"></div>
+                <br>
+                <!-- DISPLAYS THE BUTTON ARRAY  -->
+                <ul id="button-display"></ul>
+
+                <!-- DISPLAYS WHETHER USER IS RIGHT OR WRONG -->
+                <div class="areYouRight">
+                    <div class="timeout"></div>
+                </div>
+
+                <!-- DISPLAYS THE LAST PAGE WITH STATS AND GETS INITIALS FOR HIGH SCORE  -->
+                <div class="final-page" style="display: none">
+                    <div id="message"></div>
+                    <div id="score"></div>
+                    <div id="correct"></div>
+                    <div id="incorrect"></div>
+                    <br>
+                    <div id="initials">
+                        <form>
+                            Enter initials:<input type="text" placeholder="Enter initials here" id="userInput"
+                                name="initials">
+                            <input type="button" id="submitInitials" style="color:white;" value="Submit">
+                        </form>
+                    </div>
+                    
+
+                </div>
+                <div class="highScorePage" style="display:none">
+                    <h1 id="hsTitle">Highscores</h1>
+                    <hr id="win" />
+                    <ul id="hsArray"></ul>
+                    <!-- <hr id = "win"/> -->
+                    <div>
+                        <button type="button" id="goBack">Back</button>
+                        <button type="button" id="resetScores">Reset Highscores</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- LINK TO JAVASCRIPT FILE -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>    
+    
+</body>
+</html>
